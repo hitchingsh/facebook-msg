@@ -1,6 +1,6 @@
 {
-    "appSecret": "",
+    "appSecret": "ddde7ddbfaaee72c41bab3e52f835952",
     "pageAccessToken": "EAAUkD5visKQBALQIgj6a6WMsAokKlwtJMk1EviX9CqszH4EqxLKDneGw2pQo5QWB5wPmiHOOsZBEcWT0ARhAUKJZAeqvMsC8ieT3NnmJX3EFY2uxgm777ypmRWx6v6544eq8ZBGAb1VPxPGCOz9au4numb8dVTCt1ELVZCSyZCgZDZD",
-    "validationToken": "",
-    "serverURL": ""
+    "validationToken": "test_my_app",
+    "serverURL": "https://glacial-stream-22246.herokuapp.com/webhook"
 }
