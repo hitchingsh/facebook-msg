@@ -221,9 +221,9 @@ function receivedMessage(event) {
   var timeOfMessage = event.timestamp;
   var message = event.message;
 
-  console.log("Received message for user %d and page %d at %d with message:", 
+  console.log("Yo HH, I received message for user %d and page %d at %d with message:", 
     senderID, recipientID, timeOfMessage);
-  console.log(JSON.stringify(message));
+  console.log(JSON.stringify(message + " dude"));
 
   var isEcho = message.is_echo;
   var messageId = message.mid;
