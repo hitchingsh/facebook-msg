@@ -231,13 +231,13 @@ function receivedMessage(event) {
   var metadata = message.metadata;
 
   // You may get a text or attachment but not both
-  var messageText = message.text + " rad dude";
+  var messageText = message.text; // + " rad dude";
   var messageAttachments = message.attachments;
   var quickReply = message.quick_reply;
 
   if (isEcho) {
     // Just logging message echoes to console
-    console.log("Received echo for message %s and app %d with metadata %s", 
+    console.log("Received echo for message %s and app %d with metadata %s via receivedMessage", 
       messageId, appId, metadata);
     return;
   } else if (quickReply) {
@@ -815,10 +815,10 @@ function callSendAPI(messageData) {
       var messageId = body.message_id;
 
       if (messageId) {
-        console.log("Successfully sent message with id %s to recipient %s", 
+        console.log("Successfully sent message with id %s to recipient %s via callSendAPI", 
           messageId, recipientId);
       } else {
-      console.log("Successfully called Send API for recipient %s", 
+      console.log("Successfully called Send API for recipient %s via callSendAPI", 
         recipientId);
       }
     } else {
