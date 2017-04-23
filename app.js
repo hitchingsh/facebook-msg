@@ -595,7 +595,7 @@ function sendButtonMessageHH(recipientId) {
           text: "CaptionMagic iPhone App",
           buttons:[{
             type: "web_url",
-            url: "https://www.captionmagic.net",
+            url: "http://www.captionmagic.net",
             title: "Open Web URL"
           }, {
             type: "postback",
