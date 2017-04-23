@@ -285,6 +285,10 @@ function receivedMessage(event) {
         sendButtonMessage(senderID);
         break;
 
+      case 'buttonHH':
+        sendButtonMessageHH(senderID);
+        break;
+
       case 'generic':
         sendGenericMessage(senderID);
         break;
@@ -565,6 +569,42 @@ function sendButtonMessage(recipientId) {
             type: "phone_number",
             title: "Call Phone Number",
             payload: "+16505551234"
+          }]
+        }
+      }
+    }
+  };  
+
+  callSendAPI(messageData);
+}
+
+/*
+ * Send a button message using the Send API.
+ *
+ */
+function sendButtonMessageHH(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "CaptionMagic iPhone App",
+          buttons:[{
+            type: "web_url",
+            url: "https://www.captionmagic.net",
+            title: "Open Web URL"
+          }, {
+            type: "postback",
+            title: "Trigger Postback",
+            payload: "CAPTIONMAGIC_DEVELOPER_DEFINED_PAYLOAD"
+          }, {
+            type: "phone_number",
+            title: "Call Phone Number",
+            payload: "+16508629657"
           }]
         }
       }
