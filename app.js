@@ -335,7 +335,7 @@ function receivedMessage(event) {
       case 'hi':
       case 'hello':
       case 'sup':
-        sendTextMessage(senderID, "Hamilton says hello to you to");
+        sendTextMessage(senderID, "Hamilton says hello to you to from his Node.js app in github");
         break;
       case 'yo':
         sendTextMessage(senderID, "Yo yo yo its time to go");
