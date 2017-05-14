@@ -258,9 +258,10 @@ function receivedMessage(event) {
       case 'hi':
       case 'hello':
       case 'sup':
-      case 'yo':
         sendTextMessage(senderID, "Hamilton says hello to you to");
         break;
+      case 'yo':
+        sendTextMessage(senderID, "Yo yo yo its time to go");
       case 'image':
         sendImageMessage(senderID);
         break;
