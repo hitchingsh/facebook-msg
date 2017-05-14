@@ -397,6 +397,7 @@ function receivedMessage(event) {
         break;
 
       default:
+      /*
             wit.runActions(
               sessionId, // the user's current session
               text, // the user's message
@@ -419,7 +420,8 @@ function receivedMessage(event) {
             .catch((err) => {
               console.error('Oops! Got an error from Wit: ', err.stack || err);
             })
-        // sendTextMessage(senderID, messageText);
+           */
+        	sendTextMessage(senderID, messageText);
     }
   } else if (messageAttachments) {
     sendTextMessage(senderID, "Message with attachment received");
